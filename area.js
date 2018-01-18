@@ -5,7 +5,6 @@ var input = [
 ];
 var result = input.map(function(val){
   var z = (val.x * val.x) + (val.y * val.y);
-  console.log(z / z);
   return Math.sqrt(z);
 });
 console.log(result[0] === 5);
