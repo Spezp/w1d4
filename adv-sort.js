@@ -9,11 +9,11 @@ students.sort(function(a, b){
   var nameB = b.name.toLowerCase();
   var ageA = a.age;
   var ageB = b.age;
-  if (nameA < nameB && nameA !== nameB)  {
+  if (nameA < nameB)  {
     return -1;
-  } if(nameA > nameB && nameA !== nameB) {
+  } else if(nameA > nameB) {
     return 1;
-  } if(nameA === nameB){
+  } else if(nameA === nameB){
     return ageB - ageA;
   }
   return 0;
