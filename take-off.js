@@ -1,8 +1,9 @@
 var countdownGenerator = function (x) {
+
   var count = x;
-  var message = '';
+
   return function(){
-    if(count === -1) {
+    if(count > -1) {
       console.log('Rockets already gone, bub!');
     } else if(count > 0) {
       console.log('T-minus ' + count + '...');
