@@ -13,7 +13,9 @@ function makeLoadedDie() {
       index++;
     }
     return whichRoll;
-  };
+  };var list = [5, 4, 6, 1, 6, 4, 2, 3, 3, 5];
+  var index = 0;
+  var whichRoll;
 }
 var rollLoadedDie = makeLoadedDie();
 console.log(rollLoadedDie());
